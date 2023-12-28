@@ -82,6 +82,32 @@ body {
 .team .card-body {
     font-size: 20px;
 }
+#presentacion{
+    color:white;
+    background-color: blue;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 767px) {
     .navbar-nav {
