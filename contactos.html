@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Cooperativa Agropecuara Payogasta</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/mititulo.png">
+</head>
+    <body>
+        <!--Formulario desde aqui-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top "><!--navegacion desde aqui-->
+
+            <div class="container">
+
+                <a href="Index.html" class="navbar-brand"> <span class="text-primary">Cooperativa</span> Agropecuaria</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nosotrosEmp.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactos.html" class="nav-link">Contactos</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- inicio del wizard -->
+        <section class="contact section-padding">
+
+            <div class="container mt-5 mb-5 text-light">
+                <div id="encabezado">
+                    <h1 class=" text-center">Contacto</h1>
+                    <h2>Nuestra cooperativa se encuentra en el B° San Cayetano Manzana 9 - Casa 7</h2>
+                    <p>Tel: 3874513144 - Email: cooperativa.agropecuaria.payogasta@gmail.com <br>
+                        Payogasta - Cachi - Salta</p>
+                </div>
+                <div id="paso-1">
+                    <h2>Informacion para contacto</h2>
+                    <p>* Apellido y nombres:</p>
+                    <input type="text" id="nombre" placeholder="Fabián, Daniel" required>
+                </div>
+                <div id="paso-2" style="display: none;">
+                    <h2>* Telefono</h2>
+                    <p>Sin 0 y sin 15</p>
+                    <input type="number" id="apellido" placeholder="3874513144">
+                </div>
+                <div id="paso-3" style="display: none;">
+                    <h2> * Correo Electronico</h2>
+                    <p>Se debe incluir un formato de email valido</p>
+                    <input type="email" id="email" placeholder="correo@dominio.com.ar">
+                </div>
+                <div id="paso-4" style="display: none;">
+                    <h2>Datos ingresados</h2>
+                    <ul>
+                        <li id="resumen-nombre">Apellido y Nombres: </li>
+                        <li id="resumen-apellido">Telefono: </li>
+                        <li id="resumen-email">Email: </li>
+                        
+                    </ul>
+                    <div class="spinner-border" role="status" id="spinners">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+
+                     <!-- Button trigger modal -->
+                     <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4 mx-auto">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Finalizar
+                            </button>
+                        </div>
+                        <div class="col-4"></div>
+                    
+                    </div>
+                    <!-- Modal -->
+                    <form action="index.html">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-secondary" id="exampleModalLabel">Ventana de Confirmación</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-secondary">
+                            Estas seguro que desea enviar esta informacion?
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit"  class="btn btn-success">Enviar Datos</button>
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <br>
+            
+                <div style="text-align:left; display: inline-block;">
+                    <button id="btn-anterior">Anterior</button>
+                </div>
+                <div style="text-align: right;width: 1200px; display: inline-block; ">
+                    <button id="btn-siguiente">Siguiente</button>
+                </div>
+            
+
+
+            </div>
+
+        </section>
+
+        <footer class="bg-dark p-2 text-white text-center">
+            <div class="container">
+                <p class="text-white">Payogasta-Cachi</p>
+                <p class="text-white">Valles Calchaquies - Salta</p>
+                <a href="https://www.facebook.com/groups/536844553830405/" class="bi bi-facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/cachiturismo/" class="bi bi-instagram" target="_blank"></a>
+                <a href="https://twitter.com/Cachibue" class="bi bi-twitter" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/luis-miguel-flores-b6893224a/" class="bi bi-linkedin" target="_blank"></a>
+                <a href="https://www.youtube.com/watch?v=NfZicaPUmRw&ab_channel=TXVPRODUCTORA" class="bi bi-youtube" target="_blank"></a>
+            </div>
+        </footer>
+    <!--Formulario hasta aqui-->
+
+    <script>
+        setTimeout(()=>{
+          document.getElementById("spinners").style.display="none";
+        },10000)
+    </script>
+    <script src="js/script-wizard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>s
+    </body>
+</html>
